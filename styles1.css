@@ -1,0 +1,9 @@
+body{
+    background-image: url("https://d2r2ijn7njrktv.cloudfront.net/IL/uploads/2020/02/04162903/unbalanced-scales.jpg");
+}
+div{
+    text-align:center; 
+    padding:6%;
+    color: black;
+    display: block ;
+}

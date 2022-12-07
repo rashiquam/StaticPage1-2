@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>page2</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <div class="container-fluid" id="div1">
+        <div class="row">
+        <div class="col-12">
+         <nav class="navbar navbar-expand-lg" id="nav1">
+         <a class="navbar-brand" href=""><strong>LOGO</strong></a>
+           <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+                 <a class="nav-link" href="index.html">LOGOUT</a>
+            </li>
+           </ul>
+         </nav>
+        </div>   
+        </div>
+        </div> 
+        <br>
+
+        <div class="container-fluid" id="div2">
+            <div class="row">
+            <div class="col-12">
+             <nav class="navbar navbar-expand-lg" id="nav2">
+             <a class="navbar-brand" href="">
+               <input type="search" placeholder="Search" id="searchbar">
+             </a>
+               <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+                     <a class="nav-link" href="">
+                         <button id="add">ADD</button>
+                     </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <button id="edit">EDIT</button>
+                    </a>
+               </li>
+               </ul>
+             </nav>
+            </div>   
+            </div>
+            </div>  
+    <br>
+
+    
+    <div class="container-fluid" id="div1">
+     <div class="row">
+       <div class="col-12">
+        <table id="table"  border="1">
+            <th>
+                <!-- <td>Sno.</td> -->
+                <td><strong>Case Number</strong></td>
+                <td><strong>Date of Hearing</strong></td>
+                <td><strong>Name of the case</strong></td>
+                <td><button><strong>View More</strong></button></td>
+            </th>
+        </table>
+    
+        <script>
+            let tableArr = [
+            [1, 32421,"1/1/2023","xyz"],
+            [2, 32422,"1/2/2023","abcd"],
+            [3, 32423,"5/1/2023","ndsjf"],
+            [4, 32424,"17/1/2023","djsaj"],
+            [5, 32425,"10/2/2023","jfiod"],
+            [5, 32425,"10/2/2023","jfiod"],
+            [5, 32425,"10/2/2023","jfiod"],
+            [5, 32425,"10/2/2023","jfiod"],
+            [5, 32425,"10/2/2023","jfiod"],
+            [5, 32425,"10/2/2023","jfiod"],
+            ]
+    
+            table=document.getElementById("table");
+            for(var i=0;i<tableArr.length;i++)
+            {
+                var newRow=table.insertRow(table.length);
+                for(var j=0;j<tableArr[i].length;j++)
+                {
+                    var cell=newRow.insertCell(j);
+                    cell.innerHTML=tableArr[i][j];
+                }
+            }
+        </script>
+       </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<div>
+    <a style="color:dimgray;" href="">Prev</a>
+    <a style="padding:5%;">Pg:1</a>
+    <a style="color:dimgrey;" href="">Next</a>
+</div>
+
+</body>
+</html>
